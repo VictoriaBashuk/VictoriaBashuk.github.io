@@ -8,7 +8,6 @@
   --dark: #2e3a42;
 }
 
-
 *,
 *::before,
 *::after {
@@ -30,6 +29,10 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 input,
@@ -211,7 +214,7 @@ body {
 /* Hero */
 
 .hero {
-  height: 680px;
+  height: 720px;
   padding: 40px 30px;
   position: relative;
   display: flex;
@@ -236,7 +239,8 @@ body {
 }
 
 .hero img {
-  height: 750px;
+  height: 790px;
+  max-height: 790px;
   margin-top: -110px;
   margin-right: -174px;
 }
@@ -257,6 +261,10 @@ body {
 
 .hero-content h1 span {
   color: var(--dark_beige);
+}
+
+.hero-content p {
+  font-size: 18px;
 }
 
 .hero-name {
@@ -329,6 +337,7 @@ body {
     align-items: flex-end;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 160px;
   }
   .hero-content h1 span {
     color: #515151;
@@ -689,7 +698,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 998px) {
   .container {
     width: 100%;
   }
@@ -998,7 +1007,10 @@ body {
 .certificates-block {
   position: relative;
   overflow: hidden;
-  margin: 100px 0 0;
+  margin: 30px 0 0;
+  background-color: var(--ivory);
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .certificates-block h2 span {
@@ -1160,6 +1172,7 @@ body {
   .certificates-block {
     padding-bottom: 0;
     padding-top: 0;
+    margin-top: 0;
   }
   .certs-viewport {
     padding-bottom: 0;
