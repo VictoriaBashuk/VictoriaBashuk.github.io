@@ -210,14 +210,14 @@ body {
 /* Hero */
 
 .hero {
-  height: 590px;
-  padding: 60px 40px;
+  height: 680px;
+  padding: 40px 30px;
   position: relative;
   display: flex;
   background: var(--ivory);
   max-width: 90vw;
   margin: auto;
-  margin-top: 220px;
+  margin-top: 200px;
 }
 
 .hero::after {
@@ -235,9 +235,9 @@ body {
 }
 
 .hero img {
-  height: 710px;
-  margin-top: -180px;
-  margin-right: -130px;
+  height: 750px;
+  margin-top: -110px;
+  margin-right: -174px;
 }
 
 .hero-content {
@@ -356,6 +356,7 @@ body {
   }
   .hero-content {
     order: 2;
+    padding-top: 50px;
   }
   .nav {
     position: fixed;
@@ -423,7 +424,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 1152px;
+  max-width: 1300px;
   margin: auto;
   align-items: center;
 }
@@ -501,7 +502,7 @@ body {
 /* Адаптив */
 @media (max-width: 998px) {
   .title {
-    font-size: 45px;
+    font-size: 35px;
   }
   .about-me-container {
     grid-template-columns: 1fr;
@@ -512,8 +513,6 @@ body {
   }
   .about-photo {
     margin-right: 30px;
-  }
-  .about-number {
   }
   .cards {
     margin-top: 30px;
@@ -634,12 +633,13 @@ body {
 }
 
 .requests-lead {
-  text-align: center;
-  max-width: 680px;
+  text-align: justify;
+  max-width: 800px;
   margin: 0 auto 60px;
   font-size: 22px;
   line-height: 1.6;
   color: var(--dark_beige);
+  text-align: center;
 }
 
 .requests-grid {
@@ -808,7 +808,9 @@ body {
   }
 
   .clients-point p strong {
-    font-size: 25px;
+    font-size: 21px;
+    line-height: 1.4;
+    padding: 0 10px;
   }
   .clients::after {
     background: linear-gradient(
@@ -966,6 +968,7 @@ body {
 .faq-item.active .faq-icon::after {
   transform: scaleY(0);
 }
+
 @media (max-width: 998px) {
   .faq {
     margin: 0 auto;
@@ -989,10 +992,15 @@ body {
     font-size: 16px;
   }
 }
+
 .certificates-block {
   position: relative;
   overflow: hidden;
   margin: 100px 0 0;
+}
+
+.certificates-block h2 span {
+  color: var(--dark_beige);
 }
 
 .certs-carousel {
@@ -1000,7 +1008,7 @@ body {
   max-width: 100%;
   margin: 0 auto;
   perspective: 600px;
-  padding: 100px;
+  padding: 0 60px 60px;
   overflow: hidden;
 }
 
@@ -1158,7 +1166,7 @@ body {
     font-size: 18px;
   }
   .certs-btn {
-    bottom: 25%;
+    bottom: 13%;
     top: auto;
   }
 }
@@ -1220,8 +1228,9 @@ body {
 }
 
 .contact-lead {
-  max-width: 550px;
+  max-width: 600px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .contact-content {
@@ -1337,4 +1346,66 @@ body {
   .contact-links .btn {
     min-width: 280px;
   }
+}
+
+/* ===== Certificates Description Accordion ===== */
+
+.certs-description {
+  padding: 120px 40px;
+  max-width: 90vw;
+  margin: 0 auto 100px;
+}
+
+.certs-description-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.certs-description .title span {
+  color: var(--dark_beige);
+}
+
+@media (max-width: 998px) {
+  .certs-description {
+    padding: 60px 20px 0;
+  }
+}
+
+/* ===== Free Guide (based on clients section) ===== */
+
+.free-guide-section {
+  background: url(./images/guide.JPG) 0 40% / cover no-repeat;
+}
+
+.free-guide-section::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(255, 255, 255, 0) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.free-guide-point span {
+  letter-spacing: 0.15em;
+}
+
+.clients-point .free-guide-title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.clients-point p.free-guide-text {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  text-transform: none;
+}
+
+.free-guide-btn {
+  margin: 0 auto;
 }
