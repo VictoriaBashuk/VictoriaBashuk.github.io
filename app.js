@@ -23,14 +23,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-document.querySelectorAll(".faq-question").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const item = btn.parentElement;
-
-    document.querySelectorAll(".faq-item").forEach((el) => {
-      if (el !== item) el.classList.remove("active");
-    });
-
+document.querySelectorAll(".faq-question").forEach((button) => {
+  button.addEventListener("click", () => {
+    const item = button.closest(".faq-item");
     item.classList.toggle("active");
   });
 });

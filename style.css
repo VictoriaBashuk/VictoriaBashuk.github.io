@@ -971,7 +971,7 @@ body {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 300px;
+  max-height: max-content;
   opacity: 1;
   transform: translateY(0);
 }
@@ -1170,9 +1170,9 @@ body {
     transform: translate3d(-50%, 0, 0) !important;
   }
   .certificates-block {
-    padding-bottom: 0;
+    padding-bottom: 40px;
     padding-top: 30px;
-    margin-top: 30px;
+    margin-top: 0;
   }
   .certs-viewport {
     padding-bottom: 0;
@@ -1383,6 +1383,7 @@ body {
 @media (max-width: 998px) {
   .certs-description {
     padding: 60px 20px 0;
+    max-width: 100%;
   }
 }
 
