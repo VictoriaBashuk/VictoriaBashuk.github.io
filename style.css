@@ -8,7 +8,6 @@
   --dark: #2e3a42;
 }
 
-
 *,
 *::before,
 *::after {
@@ -1375,7 +1374,7 @@ body {
 /* ===== Free Guide (based on clients section) ===== */
 
 .free-guide-section {
-  background: url(./images/guide.JPG) 0 40% / cover no-repeat;
+  background: url(./images/guide.jpg) 0 40% / cover no-repeat;
 }
 
 .free-guide-section::after {
